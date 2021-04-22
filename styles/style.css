@@ -1,0 +1,82 @@
+:root {
+  --text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.8);
+  --box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+  --border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+  text-align: center;
+  padding-top: 35px;
+}
+
+h1 {
+  color: orange;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 25px;
+}
+
+#selectColor {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: var(--border-radius);
+  background-color: white;
+  text-shadow: none;
+}
+
+button {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  outline: none;
+  border-color: #fff;
+}
+
+.right-btn {
+  background-color: aquamarine;
+  color: cornflowerblue;
+}
+
+.container {
+  padding: 10px;
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  margin: 30px auto;
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: var(--text-shadow);
+}
+
+.element:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 100px 5px rgba(116, 109, 109, 0.5);
+}
